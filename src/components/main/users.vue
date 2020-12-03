@@ -1,12 +1,9 @@
 <template>
-  <v-container>
-
-  </v-container>
+<h1>users</h1>
 </template>
 
 <script>
 export default {
-
 }
 </script>
 

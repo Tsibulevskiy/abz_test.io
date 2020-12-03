@@ -1,11 +1,10 @@
 <template>
   <v-app>
-    <v-navigation-drawer app absolute bottom temporary>
-      <app-navigation/>
-    </v-navigation-drawer>
     <v-app-bar app>
+      <v-app-bar-nav-icon color="secondary" @click="drawer=!drawer"></v-app-bar-nav-icon>
       <app-header/>
     </v-app-bar>
+    <v-navigation-drawer temporary absolute v-model="drawer"></v-navigation-drawer>
     <v-main>
       <v-container fluid>
         <app-main/>
@@ -21,14 +20,17 @@
 import appHeader from "@/components/appHeader"
 import appFooter from "@/components/appFooter"
 import appMain from "@/components/appMain"
-import appNavigation from "@/components/appNavigation"
 
 export default {
   components: {
     appMain,
     appFooter,
-    appHeader,
-    appNavigation
+    appHeader
+  },
+  data () {
+    return {
+      drawer: false
+    }
   }
 }
 </script>

@@ -1,12 +1,9 @@
 <template>
-  <v-container>
-
-  </v-container>
+<h1>signUp</h1>
 </template>
 
 <script>
 export default {
-
 }
 </script>
 
